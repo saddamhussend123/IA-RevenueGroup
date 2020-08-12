@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>IA Revenue Group</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/revenueGrp.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="js/addRevenueGrp.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h2>
+			Revenue Group
+		</h2>
+
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Revenue
+			Group</button>
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Add Revenue Group</h4>
+					</div>
+					<div class="modal-body">
+
+						<div>
+							<label>Revenue Group Title</label>
+							<br>
+							<input type="text" class="form-control" />
+						</div>
+						<br>
+
+
+						<div class="dropdown">
+							<label class="ifLabel">If</label>
+							<select class="grpConditionMain" id="cars">
+								<option>aff_sub</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+							<label>of the below conditiones are met</label>
+						</div>
+
+						<br>
+						<div id="newRuleMain">
+							<div class="row ruleFieldMain">
+								<div class="col-xs-2">
+									<div class="dropdown">
+										<select class="grpConditionMain" id="cars">
+											<option>aff_sub</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="dropdown">
+										<select class="grpConditionMain" id="cars">
+											<option>is</option>
+											<option>yes</option>
+											<option>no</option>
+											<option>is not</option>
+										</select>
+									</div>
+								</div>
+								<div id="insertParameter">
+									<div class="col-xs-7" id="param">
+										<input type="text" class="form-control" name="watch"
+											placeholder="inesert parameter" placeholder="watch" />
+										<span class="addparam" onclick="insertParameter(this)">add rule</span>
+
+									</div>
+
+								</div>
+
+								<div class="removePRule" onclick="removepRule(this)">
+									<i title="Remove Rule" class="fa fa-minus-circle iconSize"></i>
+								</div>
+
+							</div>
+						</div>
+						<span onclick="addNewRule()" class="addPRule">
+							<i title="Add Rule" class="fa fa-plus-circle iconSize"></i>
+						</span>
+
+						<br>
+						<div class="revenuePercentMain">
+							<label>then revenue is</label>
+
+							<input type="number" class="form-control revenuePercent" placeholder="%" />
+						</div>
+
+					</div>
+
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-warning btnConfirm" data-dismiss="modal"
+							onclick="submitForm();">Confirm</button>
+						<button type="button" class="btn btn-default btnCancel" data-dismiss="modal"
+							onclick="location.reload();">Cancel</button>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+	</div>
+
+</body>
+
+</html>

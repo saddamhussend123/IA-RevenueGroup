@@ -1,0 +1,129 @@
+.btnConfirm{
+    float: left;
+}
+.btnCancel{
+    float: left;
+    color: #ffffff;
+    background-color: #333333;
+}
+.btnCancel:hover{
+    color: #ffffff;
+    background-color: #333333;
+}
+.modal-header ,.modal-footer{
+    padding: 15px;
+    border: 0px solid #e5e5e5;
+}
+
+.reGrpTitle{
+    width: 100%;
+}
+.reGrpTitle:active{
+    border: 1px solid blueviolet;
+}
+.ifLabel{
+    margin-right: 12px;
+}
+.ifLabelCaret{
+    margin-left: 70% !important;
+}
+.ifLabelCaret1{
+    margin-left: 45% !important;
+}
+.grpConditionMain{
+    min-width: 125px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    height: 30px;
+    border-radius: 5px;
+}
+.grpConditionMain:focus{
+    border-color: #00a3E0;
+}
+.grpCondition{
+    min-width: 125px;
+left:22px;
+}
+.grpCondition1{
+    min-width: 125px;
+}
+
+.addparam{
+    color:  #00a3E0;
+    display: block;
+    width: 60px;
+    float: right;
+    margin-top: -25px;
+}
+
+.removeRule{
+color: red;
+display: none;
+width: 80px;
+float: right;
+margin-top: -25px;
+}
+
+.addRule{
+
+}
+.setPosition{
+    margin-right: 8.33%;
+    float: right;
+    
+}
+
+.revenuePercentMain{
+    display: flex;
+}
+.revenuePercentMain label {
+    margin-right: 20px;;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.revenuePercent::-webkit-input-placeholder {
+    text-align: right;
+  }
+.revenuePercent{
+    width: 20%;
+}
+
+hr{
+    margin-top: -6px;
+    margin-bottom: 8px;
+    border: 0;
+    border-top: 1px solid #a29999;
+
+}
+
+.ruleFieldMain{
+    background-color: #cccccc59;
+    padding: 6px;
+}
+.iconSize{
+    font-size: 24px;
+}
+.modal-backdrop
+{
+    opacity: 0.5 !important;
+}
+
+.removePRule{
+    width: 20px;
+    height: 20px;
+    margin-right: 50px; 
+    float: right;
+    margin-top: -24px;
+    margin-left: 26%;
+}
+
+.addPRule{
+    float:right;
+    width: 25px;
+    height: 25px;
+    margin-top: -30px;
+}
